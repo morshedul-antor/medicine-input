@@ -6,7 +6,7 @@ my_db_conn = mysql.connector.connect(
     password=""
 )
 
-
 mycursor = my_db_conn.cursor()
+mycursor.execute("CREATE DATABASE medicines")
 
-mycursor.execute("CREATE DATABASE medicinedb")
+print('Database created...')
